@@ -2,6 +2,12 @@ package org.java.java8.optional;
 
 public class Test1 {
     public static void main(String[] args) {
+        // 4, 7+4%7
+        int startMs = 4;
+        int tickMs = 7;
+        System.out.println(startMs - (startMs % tickMs));
+
+        System.out.println(System.nanoTime());
 //        System.out.println(Arrays.toString(((URLClassLoader)Test1.class.getClassLoader()).getURLs()));
 //        Optional<Date> date = Optional.of(new Date());
 //        System.out.println(date.get());

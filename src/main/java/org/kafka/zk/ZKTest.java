@@ -9,7 +9,9 @@ import java.util.List;
 
 public class ZKTest {
     public static void main(String[] args) throws IOException, InterruptedException {
-        ZooKeeper zk = new ZooKeeper("106.15.234.239:2181", 3000, event -> {
+//        String ipPort = "106.15.234.239:2181";
+        String ipPort = "90.84.179.11:2181";
+        ZooKeeper zk = new ZooKeeper(ipPort, 3000, event -> {
             System.out.println(new Date().getTime());
             if (event.getType() == Watcher.Event.EventType.NodeDataChanged){
                 System.out.println(new Date().getTime());

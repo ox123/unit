@@ -22,6 +22,7 @@ public class DatagramChannelTest {
                 Set<SelectionKey> selectionKeys = selector.selectedKeys();
                 for (SelectionKey key :
                         selectionKeys) {
+//                    key.
                     if (key.isAcceptable()){
 
                     }

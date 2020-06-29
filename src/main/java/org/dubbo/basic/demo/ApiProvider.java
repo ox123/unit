@@ -11,7 +11,7 @@ public class ApiProvider {
 //        ServiceConfig
         ServiceConfig serviceConfig = new ServiceConfig<GreetingService>();
         serviceConfig.setApplication(new ApplicationConfig("first-dubbo-app"));
-        RegistryConfig registryConfig = new RegistryConfig("zookeeper://106.15.234.239:2181");
+        RegistryConfig registryConfig = new RegistryConfig(Constant.local_zkAddresWithProtocal);
         serviceConfig.setRegistry(registryConfig);
         serviceConfig.setInterface(GreetingService.class);
         serviceConfig.setRef(new GreetingServiceImpl());

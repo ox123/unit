@@ -10,7 +10,7 @@ public class ApiConsumer {
         try {
             ReferenceConfig<GreetingService> referenceConfig = new ReferenceConfig<GreetingService>();
             referenceConfig.setApplication(new ApplicationConfig("first-dubbo-consumer"));
-            referenceConfig.setRegistry(new RegistryConfig("zookeeper://106.15.234.239:2181"));
+            referenceConfig.setRegistry(new RegistryConfig(Constant.local_zkAddresWithProtocal));
             referenceConfig.setInterface(GreetingService.class);
             referenceConfig.setTimeout(5000);
             referenceConfig.setGroup("duboo");

@@ -33,7 +33,7 @@ public class NioDiscardServer {
                     } else if (selectionKey.isReadable()) {
                         SocketChannel socketChannel = (SocketChannel) selectionKey.channel();
                         ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
-                        byteBuffer.flip();
+//                        byteBuffer.flip();
                         int length = 0;
                         while ((length = socketChannel.read(byteBuffer)) > 0) {
                             byteBuffer.flip();
