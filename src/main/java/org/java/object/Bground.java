@@ -3,6 +3,7 @@ package org.java.object;
 public class Bground extends Thread {
     public static void main(String[] args) {
         Bground gb = new Bground();
+        System.out.println(Math.abs("consumerGroupId".hashCode()) % 50);
 //        gb.run();
         System.out.println(System.getenv("user.home"));
     }
