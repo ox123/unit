@@ -34,7 +34,7 @@ public class StreamTest {
         System.out.println(max + "\t\t" + min);
 
         IntStream.rangeClosed(1, 10).parallel().forEach(i -> {
-            System.out.println(i);
+            System.out.println("----->"+i);
         });
         int n = 10000;
         long result = 0;
