@@ -9,3 +9,5 @@
 
 ### dubbo
 - NoClassFoundError: https://blog.csdn.net/u010938610/article/details/85318907
+- [线程池技术面试解释](https://juejin.im/post/6844903889678893063)
+- [java面试](https://github.com/whx123/JavaHome)
