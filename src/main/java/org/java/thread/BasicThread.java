@@ -19,7 +19,7 @@ public class BasicThread {
             String s = futureTask.get();
             System.out.println(s);
             long end = System.currentTimeMillis();
-            System.out.println(end-start);
+            System.out.println(end - start);
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {

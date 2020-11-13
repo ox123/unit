@@ -23,15 +23,16 @@ public class Test1 {
     }
 }
 
-class  Base{
+class Base {
     {
         System.out.println("{}");
     }
+
     static {
         System.out.println("static field");
     }
 
-    public static void test(){
+    public static void test() {
         System.out.println("static method");
     }
 }

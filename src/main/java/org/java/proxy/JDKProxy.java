@@ -25,7 +25,7 @@ public class JDKProxy implements InvocationHandler {
         JDKProxy proxy = new JDKProxy(new RealHello());
         ClassLoader classLoader = JDKProxy.class.getClassLoader();
         // 设置此环境变量，将会将生产的代理类文件保存在本地 $Proxy0.class
-        System.setProperty("sun.misc.ProxyGenerator.saveGeneratedFiles","true");
+        System.setProperty("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
         Hello test = (Hello) Proxy.newProxyInstance(classLoader, new Class[]{Hello.class}, proxy);
         System.out.println(test.say());
     }

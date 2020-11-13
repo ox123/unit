@@ -16,7 +16,7 @@ public class MyServerInitializer extends ChannelInitializer<SocketChannel> {
         pipeline.addLast(new LengthFieldBasedFrameDecoder(Integer.MAX_VALUE,
                 0,
                 4,
-                0 ,
+                0,
                 4));
         pipeline.addLast(new LengthFieldPrepender(4));
         // 解码器

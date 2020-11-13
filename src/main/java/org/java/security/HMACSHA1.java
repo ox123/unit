@@ -14,7 +14,7 @@ public class HMACSHA1 {
     public static void main(String[] args) throws Exception {
         String encryptKey = "abc";
         String encryptText = "ccc";
-        byte[] data=encryptKey.getBytes(ENCODING);
+        byte[] data = encryptKey.getBytes(ENCODING);
         //根据给定的字节数组构造一个密钥,第二参数指定一个密钥算法的名称
         SecretKey secretKey = new SecretKeySpec(data, MAC_NAME);
         //生成一个指定 Mac 算法 的 Mac 对象

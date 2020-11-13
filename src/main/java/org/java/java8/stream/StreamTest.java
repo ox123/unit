@@ -6,9 +6,10 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 public class StreamTest {
-    static class AA{
+    static class AA {
 
     }
+
     public static void main(String[] args) {
         File f = new File("D:\\code\\project\\unit\\src\\main\\java\\org\\java\\java8\\stream\\StreamTest.java");
         System.out.println(f.getAbsolutePath());
@@ -26,7 +27,7 @@ public class StreamTest {
         }
         System.out.println(num);
 
-        int arr1[] ={0,2,1,-6,6,-7,9,1,2,0,1};
+        int arr1[] = {0, 2, 1, -6, 6, -7, 9, 1, 2, 0, 1};
         int max = Arrays.stream(arr1).max().getAsInt();
         int min = Arrays.stream(arr1).min().getAsInt();
         int sum1 = Arrays.stream(arr1).sum();
@@ -34,7 +35,7 @@ public class StreamTest {
         System.out.println(max + "\t\t" + min);
 
         IntStream.rangeClosed(1, 10).parallel().forEach(i -> {
-            System.out.println("----->"+i);
+            System.out.println("----->" + i);
         });
         int n = 10000;
         long result = 0;

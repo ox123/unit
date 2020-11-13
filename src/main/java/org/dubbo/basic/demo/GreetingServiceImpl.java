@@ -15,7 +15,7 @@ public class GreetingServiceImpl implements GreetingService {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        return "hello"+ name+" " + RpcContext.getContext().getAttachment("company");
+        return "hello" + name + " " + RpcContext.getContext().getAttachment("company");
     }
 
     @Override

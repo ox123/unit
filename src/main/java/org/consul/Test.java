@@ -11,7 +11,7 @@ import java.util.List;
 public class Test {
     public static void main(String[] args) throws IllegalAccessException {
 //
-        System.out.println( 1& 1);
+        System.out.println(1 & 1);
         Consul client = Consul.builder().build();
 //
 //        Field[] declaredFields = Consul.class.getDeclaredFields();
@@ -33,17 +33,17 @@ public class Test {
 
     private static void consulTest1() {
         ConsulClient client = new ConsulClient("80.158.32.147");
-        client.setKVValue("aa/cc/dd","asdfd");
+        client.setKVValue("aa/cc/dd", "asdfd");
         Response<List<Datacenter>> datacenters = client.getDatacenters();
-        System.out.println( datacenters.getValue());
+        System.out.println(datacenters.getValue());
         System.out.println(client.getKVValue("aa/cc/dd").getValue().getDecodedValue());
         Response<List<String>> statusPeers = client.getStatusPeers();
-        statusPeers.getValue().forEach(key->{
+        statusPeers.getValue().forEach(key -> {
             System.out.println(key);
         });
         Response<List<String>> kvKeysOnly = client.getKVKeysOnly("prom/config/eu-de/scrape_configs/ntp_internal_offset_latency_probe_1/");
-        kvKeysOnly.getValue().forEach(key->{
-            System.out.println(client.getKVValue(key).getValue().getDecodedValue()+"----"+key);
+        kvKeysOnly.getValue().forEach(key -> {
+            System.out.println(client.getKVValue(key).getValue().getDecodedValue() + "----" + key);
             Response<GetBinaryValue> kvBinaryValue = client.getKVBinaryValue(key);
             System.out.println(new String(kvBinaryValue.getValue().getValue()));
         });

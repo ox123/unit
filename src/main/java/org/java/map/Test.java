@@ -38,8 +38,8 @@ public class Test {
         ValueComparator vc = new ValueComparator(countMap);
         TreeMap<String, Integer> sortedMap = new TreeMap<>(vc);
         sortedMap.putAll(countMap);
-        sortedMap.forEach((key,val)->{
-            System.out.println(key+"---"+val);
+        sortedMap.forEach((key, val) -> {
+            System.out.println(key + "---" + val);
         });
     }
 }

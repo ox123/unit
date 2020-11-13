@@ -47,7 +47,7 @@ public class MyThreadPool {
             try {
                 pool.execute(() -> {
 //                    System.out.println(">>>>" + num + "-----");
-                    int c = num/num;
+                    int c = num / num;
                 });
             } catch (InterruptedException e) {
                 e.printStackTrace();

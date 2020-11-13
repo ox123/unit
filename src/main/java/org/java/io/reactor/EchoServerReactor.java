@@ -10,7 +10,8 @@ import java.nio.channels.SocketChannel;
 public class EchoServerReactor implements Runnable {
     Selector selector;
     ServerSocketChannel serverSocket;
-    EchoServerReactor(){
+
+    EchoServerReactor() {
         try {
             selector = Selector.open();
             serverSocket = ServerSocketChannel.open();
@@ -22,19 +23,20 @@ public class EchoServerReactor implements Runnable {
             e.printStackTrace();
         }
     }
+
     @Override
     public void run() {
 
     }
 
-    class AcceptHandler implements Runnable{
+    class AcceptHandler implements Runnable {
 
         @Override
         public void run() {
             try {
                 SocketChannel channel = serverSocket.accept();
-                if (channel!=null){
-                    new EchoHandler(selector,channel);
+                if (channel != null) {
+                    new EchoHandler(selector, channel);
                 }
             } catch (IOException e) {
                 e.printStackTrace();

@@ -15,9 +15,9 @@ public class MyChartServerHandler extends SimpleChannelInboundHandler<String> {
         Channel channel = ctx.channel();
         System.out.println("channelRead0");
         defaultGroup.forEach(ch -> {
-            if (channel != ch){
+            if (channel != ch) {
                 ch.writeAndFlush(channel.remoteAddress() + " 发送消息:" + msg);
-            }else{
+            } else {
                 ch.writeAndFlush("self send the msg");
             }
         });

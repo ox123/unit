@@ -3,7 +3,6 @@ package org.java.cocurrent;
 /**
  * TODO synchronized 代码块级别与类级别在字节码方面的区别
  * 1. 即使我们确实有一些共享资源需要保护，也要尽可能降低锁的粒度，仅对必要的代码块与必要的保护资源进行枷锁
- *
  */
 public class InterestingTest {
     volatile int a = 1;

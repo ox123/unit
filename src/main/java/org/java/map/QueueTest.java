@@ -12,7 +12,7 @@ public class QueueTest {
         pq.add(3);
         pq.add(0);
         pq.add(1);
-        pq.forEach(item->{
+        pq.forEach(item -> {
             System.out.println(item);
         });
         System.out.println(pq);

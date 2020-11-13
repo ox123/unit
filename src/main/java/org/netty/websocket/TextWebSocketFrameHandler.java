@@ -11,7 +11,7 @@ public class TextWebSocketFrameHandler extends SimpleChannelInboundHandler<TextW
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, TextWebSocketFrame msg) throws Exception {
         System.out.println(msg.text());
-        ctx.channel().writeAndFlush(new TextWebSocketFrame("time"+ LocalDateTime.now()));
+        ctx.channel().writeAndFlush(new TextWebSocketFrame("time" + LocalDateTime.now()));
 
     }
 

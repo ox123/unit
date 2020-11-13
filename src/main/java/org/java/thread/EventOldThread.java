@@ -4,7 +4,8 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class EventOldThread {
-    private static final Lock  lock = new ReentrantLock();
+    private static final Lock lock = new ReentrantLock();
+
     public static void main(String[] args) {
         Object lock = new Object();
 

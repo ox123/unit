@@ -9,12 +9,12 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 public class MyClient {
     public static void main(String[] args) {
         EventLoopGroup eventLoopGroup = new NioEventLoopGroup();
-        Bootstrap bootstrap=  new Bootstrap();
+        Bootstrap bootstrap = new Bootstrap();
         bootstrap.group(eventLoopGroup)
                 .channel(NioSocketChannel.class)
                 .handler(new MyClientInitailizer());
         try {
-            ChannelFuture future = bootstrap.connect("localhost",8888)
+            ChannelFuture future = bootstrap.connect("localhost", 8888)
                     .sync();
             future.channel().closeFuture();
         } catch (InterruptedException e) {

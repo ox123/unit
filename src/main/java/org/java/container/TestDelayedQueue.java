@@ -25,34 +25,35 @@ enum Times {
  * 2. 考生可在2-10秒这段时间内的任意时间交卷。
  * 3. 考试时间一到，所有未交卷的学生必须交卷。
  */
-public class TestDelayedQueue {public static void main(String[] args) throws InterruptedException {
-    DelayQueue<Student> queue = new DelayQueue<>();
-    queue.add(new Student("范冰冰"));
-    queue.add(new Student("成  龙"));
-    queue.add(new Student("李一桐"));
-    queue.add(new Student("宋小宝"));
-    queue.add(new Student("吴  京"));
-    queue.add(new Student("绿巨人"));
-    queue.add(new Student("洪金宝"));
-    queue.add(new Student("李云龙"));
-    queue.add(new Student("钢铁侠"));
-    queue.add(new Student("刘德华"));
-    queue.add(new Student("戴安娜"));
-    queue.add(new Student("submit", Times.SUBMIT_TIME.getValue(), TimeUnit.SECONDS));
-    while (true) {
-        Student s = queue.take(); // 必要时进行阻塞等待
-        if (s.getName().equals("submit")) {
-            System.out.println("时间已到，全部交卷！");
-            // 利用Java8 Stream使尚未交卷学生交卷
-            queue.parallelStream()
-                    .filter(v -> v.getExpire() >= s.getExpire())
-                    .map(Student::submit)
-                    .forEach(System.out::println);
-            System.exit(0);
+public class TestDelayedQueue {
+    public static void main(String[] args) throws InterruptedException {
+        DelayQueue<Student> queue = new DelayQueue<>();
+        queue.add(new Student("范冰冰"));
+        queue.add(new Student("成  龙"));
+        queue.add(new Student("李一桐"));
+        queue.add(new Student("宋小宝"));
+        queue.add(new Student("吴  京"));
+        queue.add(new Student("绿巨人"));
+        queue.add(new Student("洪金宝"));
+        queue.add(new Student("李云龙"));
+        queue.add(new Student("钢铁侠"));
+        queue.add(new Student("刘德华"));
+        queue.add(new Student("戴安娜"));
+        queue.add(new Student("submit", Times.SUBMIT_TIME.getValue(), TimeUnit.SECONDS));
+        while (true) {
+            Student s = queue.take(); // 必要时进行阻塞等待
+            if (s.getName().equals("submit")) {
+                System.out.println("时间已到，全部交卷！");
+                // 利用Java8 Stream使尚未交卷学生交卷
+                queue.parallelStream()
+                        .filter(v -> v.getExpire() >= s.getExpire())
+                        .map(Student::submit)
+                        .forEach(System.out::println);
+                System.exit(0);
+            }
+            System.out.println(s);
         }
-        System.out.println(s);
     }
-}
 
 }
 

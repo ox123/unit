@@ -6,6 +6,6 @@ public class UnsafeTest {
     public static void main(String[] args) {
 //        AtomicStampedReference atomicStampedReference = new AtomicStampedReference();
 //        Reflection.getCallerClass();
-        new AtomicStampedReference<>(1,0);
+        new AtomicStampedReference<>(1, 0);
     }
 }

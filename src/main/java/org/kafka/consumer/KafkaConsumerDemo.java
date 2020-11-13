@@ -3,17 +3,18 @@ package org.kafka.consumer;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.kafka.Constant;
 
 import java.util.Arrays;
 import java.util.Properties;
 
 public class KafkaConsumerDemo {
-    private  final KafkaConsumer<String, String> consumer;
+    private final KafkaConsumer<String, String> consumer;
 
-    private KafkaConsumerDemo(){
+    private KafkaConsumerDemo() {
         Properties props = new Properties();
-        props.put("bootstrap.servers", "90.84.179.11:9092");
-        props.put("group.id", "test");
+        props.put("bootstrap.servers", Constant.KAFKA_ADDRESS);
+        props.put("group.id", "test1");
         props.put("enable.auto.commit", "true");
         props.put("auto.commit.interval.ms", "1000");
         props.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
@@ -21,8 +22,8 @@ public class KafkaConsumerDemo {
         consumer = new KafkaConsumer<>(props);
     }
 
-    void consume(){
-        consumer.subscribe(Arrays.asList("JAVA_TOPIC"));
+    void consume() {
+        consumer.subscribe(Arrays.asList(Constant.TEST_TOPIC00));
         while (true) {
             ConsumerRecords<String, String> records = consumer.poll(100);
             for (ConsumerRecord<String, String> record : records)
@@ -30,7 +31,7 @@ public class KafkaConsumerDemo {
         }
     }
 
-    public  static  void main(String[] args){
+    public static void main(String[] args) {
         new KafkaConsumerDemo().consume();
     }
 }

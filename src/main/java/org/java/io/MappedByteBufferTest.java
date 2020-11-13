@@ -23,11 +23,11 @@ public class MappedByteBufferTest {
                 bytes[i] = b;
             }
             Scanner scanner = new Scanner(new ByteArrayInputStream(bytes));
-            while (scanner.hasNext()){
+            while (scanner.hasNext()) {
 
             }
             long end = System.currentTimeMillis();
-            System.out.println(end-start);
+            System.out.println(end - start);
         } catch (IOException e) {
             e.printStackTrace();
         }

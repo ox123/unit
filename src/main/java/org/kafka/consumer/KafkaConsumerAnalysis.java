@@ -44,7 +44,7 @@ public class KafkaConsumerAnalysis {
                 }
             }
         });
-        Map<TopicPartition,OffsetAndMetadata> map = new HashMap<TopicPartition,OffsetAndMetadata>();
+        Map<TopicPartition, OffsetAndMetadata> map = new HashMap<TopicPartition, OffsetAndMetadata>();
         consumer.endOffsets(assignment); // 获取指定分区的末尾的消费位置
         consumer.subscribe(Collections.singleton("demo"));
         consumer.assign(topicPartitionList); // 手动指定添加订阅的分区信息

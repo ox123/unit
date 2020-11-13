@@ -32,7 +32,7 @@ public class ObjTest {
     }
 
     public static void main(String[] args) {
-new ObjTest().numQuest();
+        new ObjTest().numQuest();
 //        Object o1 = new Object();
 //        SoftReference softReference = new SoftReference(o1);
 //        o1 = null;

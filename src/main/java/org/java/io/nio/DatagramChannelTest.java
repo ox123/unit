@@ -18,12 +18,12 @@ public class DatagramChannelTest {
             Selector selector = Selector.open();
             int select = selector.select();
             selector.selectNow();
-            if (select > 0 ){
+            if (select > 0) {
                 Set<SelectionKey> selectionKeys = selector.selectedKeys();
                 for (SelectionKey key :
                         selectionKeys) {
 //                    key.
-                    if (key.isAcceptable()){
+                    if (key.isAcceptable()) {
 
                     }
                 }

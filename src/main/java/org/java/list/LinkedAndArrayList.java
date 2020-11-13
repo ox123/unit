@@ -21,12 +21,12 @@ public class LinkedAndArrayList {
         });
         System.out.println("-----------");
         Iterator<String> iterator = programmingLanguages.iterator();
-        iterator.forEachRemaining(name->{
+        iterator.forEachRemaining(name -> {
             System.out.println(name);
         });
         System.out.println("-------------");
         Iterator<String> stringIterator = programmingLanguages.descendingIterator();
-        stringIterator.forEachRemaining(name->{
+        stringIterator.forEachRemaining(name -> {
             System.out.println(name);
         });
     }

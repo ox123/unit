@@ -3,7 +3,7 @@ package org.netty.chart;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 
-public class MyChatClientHandler  extends SimpleChannelInboundHandler<String> {
+public class MyChatClientHandler extends SimpleChannelInboundHandler<String> {
     /**
      * Is called for each message of type {@link I}.
      *

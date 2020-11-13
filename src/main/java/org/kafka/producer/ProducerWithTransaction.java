@@ -24,8 +24,8 @@ public class ProducerWithTransaction {
         } catch (ProducerFencedException e) {
             producer.abortTransaction();
             e.printStackTrace();
-        }finally {
-            if (producer !=null){
+        } finally {
+            if (producer != null) {
                 producer.close();
             }
         }
