@@ -10,7 +10,7 @@ import java.util.List;
 public class ZKTest {
     public static void main(String[] args) throws IOException, InterruptedException {
 //        String ipPort = "106.15.234.239:2181";
-        String ipPort = "80.158.32.147:2181";
+        String ipPort = "localhost:2181";
         ZooKeeper zk = new ZooKeeper(ipPort, 3000, event -> {
             System.out.println(new Date().getTime());
             if (event.getType() == Watcher.Event.EventType.NodeDataChanged) {
