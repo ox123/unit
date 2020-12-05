@@ -1,6 +1,7 @@
 package org.kafka.zk;
 
 import org.apache.zookeeper.*;
+import org.kafka.Constant;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -9,9 +10,7 @@ import java.util.List;
 
 public class ZKTest {
     public static void main(String[] args) throws IOException, InterruptedException {
-//        String ipPort = "106.15.234.239:2181";
-        String ipPort = "localhost:2181";
-        ZooKeeper zk = new ZooKeeper(ipPort, 3000, event -> {
+        ZooKeeper zk = new ZooKeeper(Constant.ZK_ADDRESS, 3000, event -> {
             System.out.println(new Date().getTime());
             if (event.getType() == Watcher.Event.EventType.NodeDataChanged) {
                 System.out.println(new Date().getTime());
@@ -19,6 +18,7 @@ public class ZKTest {
         });
         System.out.println(zk.getState());
 //        Thread.sleep(1000000);
+
 
         String zpath = "/";
         List<String> zooChildren = new ArrayList<String>();
@@ -36,6 +36,11 @@ public class ZKTest {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+        }
+        try {
+            zk.getChildren("/",true);
+        } catch (KeeperException e) {
+            e.printStackTrace();
         }
     }
 }

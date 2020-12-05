@@ -15,6 +15,7 @@ func main() {
 
 	var lock sync.Mutex
 
+
 	for i := 0; i < count; i++ {
 		// 这里模拟异步并发转账
 		go transfer(&balance, 1, done, &lock)

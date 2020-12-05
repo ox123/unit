@@ -24,7 +24,8 @@ dependencies {
             "com.rabbitmq:amqp-client:5.9.0",
             "com.ecwid.consul:consul-api:1.4.5",
             "org.apache.pulsar:pulsar-client:2.5.2",
-            'com.orbitz.consul:consul-client:1.4.0'
+            'com.orbitz.consul:consul-client:1.4.0',
+            'redis.clients:jedis:3.3.0'
     )
     testCompile(
             "junit:junit:4.12"
