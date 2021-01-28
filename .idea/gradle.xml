@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../../github/mq/kafka" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../../software/gradle" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../../github/mq/kafka" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/clients" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/connect" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/connect/api" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/connect/basic-auth-extension" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/connect/file" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/connect/json" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/connect/mirror" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/connect/mirror-client" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/connect/runtime" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/connect/transforms" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/core" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/examples" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/generator" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/jmh-benchmarks" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/log4j-appender" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/raft" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/streams" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/streams/examples" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/streams/streams-scala" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/streams/test-utils" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/streams/upgrade-system-tests-0100" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/streams/upgrade-system-tests-0101" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/streams/upgrade-system-tests-0102" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/streams/upgrade-system-tests-0110" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/streams/upgrade-system-tests-10" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/streams/upgrade-system-tests-11" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/streams/upgrade-system-tests-20" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/streams/upgrade-system-tests-21" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/streams/upgrade-system-tests-22" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/streams/upgrade-system-tests-23" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/streams/upgrade-system-tests-24" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/streams/upgrade-system-tests-25" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/streams/upgrade-system-tests-26" />
+            <option value="$PROJECT_DIR$/../../github/mq/kafka/tools" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/unit" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../../software/gradle" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/unit" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
