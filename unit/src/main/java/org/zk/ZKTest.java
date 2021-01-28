@@ -1,6 +1,6 @@
-package org.kafka.zk;
+package org.zk;
 
-import org.Constant;
+import org.utils.Constant;
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.ZooKeeper;

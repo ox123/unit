@@ -1,6 +1,6 @@
 package org.redis;
 
-import org.Constant;
+import org.utils.Constant;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 

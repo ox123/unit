@@ -1,6 +1,6 @@
 package org.kafka;
 
-import org.Constant;
+import org.utils.Constant;
 
 import java.util.Properties;
 

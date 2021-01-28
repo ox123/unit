@@ -18,17 +18,17 @@
 
         <!-- 配置别名信息，在映射配置文件中可以直接使用Customer这个别名
 
-      代替org.example.domain.Customer这个类 -->
+      代替org.mybatis.shop.domain.Customer这个类 -->
 
-        <typeAlias type="org.example.domain.Customer" alias="Customer"/>
+        <typeAlias type="org.mybatis.shop.domain.Customer" alias="Customer"/>
 
-        <typeAlias type="org.example.domain.Address" alias="Address"/>
+        <typeAlias type="org.mybatis.shop.domain.Address" alias="Address"/>
 
-        <typeAlias type="org.example.domain.Order" alias="Order"/>
+        <typeAlias type="org.mybatis.shop.domain.Order" alias="Order"/>
 
-        <typeAlias type="org.example.domain.OrderItem" alias="OrderItem"/>
+        <typeAlias type="org.mybatis.shop.domain.OrderItem" alias="OrderItem"/>
 
-        <typeAlias type="org.example.domain.Product" alias="Product"/>
+        <typeAlias type="org.mybatis.shop.domain.Product" alias="Product"/>
 
       </typeAliases>
 
