@@ -1,10 +1,10 @@
 package org.kafka.producer;
 
+import org.Constant;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.clients.producer.RecordMetadata;
-import org.kafka.Constant;
 import org.kafka.KafkaUtils;
 
 import java.util.Properties;

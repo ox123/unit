@@ -1,7 +1,9 @@
 package org.kafka.zk;
 
-import org.apache.zookeeper.*;
-import org.kafka.Constant;
+import org.Constant;
+import org.apache.zookeeper.KeeperException;
+import org.apache.zookeeper.Watcher;
+import org.apache.zookeeper.ZooKeeper;
 
 import java.io.IOException;
 import java.util.ArrayList;
