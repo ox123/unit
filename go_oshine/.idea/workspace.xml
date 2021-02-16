@@ -1,124 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="44211a88-5de8-4d70-a4a7-bf8cb7d34d81" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="44211a88-5de8-4d70-a4a7-bf8cb7d34d81" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/main/demo_arry_slice.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/go_oshine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/go_oshine.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/chatRoom.go" beforeDir="false" afterPath="$PROJECT_DIR$/main/chatRoom.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/chatRoom.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="e#14#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/读写锁.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-              <folding>
-                <element signature="e#14#60#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main/文件拷贝.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/banck_transfer.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-              <folding>
-                <element signature="e#13#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/software/Go/src/sync/atomic/doc.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/Goexit.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding>
-                <element signature="e#14#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/locktest.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="14" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="145" column="12" lean-forward="true" selection-start-line="145" selection-start-column="12" selection-end-line="145" selection-end-column="12" />
-              <folding>
-                <element signature="n#!!block;n#test#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/tcp-cs-server.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-              <folding>
-                <element signature="e#14#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/tcp-cs-con-server.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="762">
-              <caret line="48" column="9" lean-forward="true" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -141,7 +36,18 @@
       <dir>D:\code\project\go_oshine\main</dir>
     </dirStrings>
   </component>
-  <component name="GOROOT" path="D:\software\Go" />
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../install/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -181,6 +87,8 @@
     <option name="width" value="3026" />
     <option name="height" value="1946" />
   </component>
+  <component name="ProjectId" id="1o77hbesJPhTdI2Hzo3ixzb2iiZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -211,19 +119,23 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
-    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
-    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="configurable..is.expanded" value="false" />
+    <property name="configurable.GoLibrariesConfigurable.is.expanded" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../script_exporter" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
     <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
   </component>
   <component name="RecentsManager">
@@ -231,19 +143,7 @@
       <recent name="D:\code\project\go_oshine\main" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Go Build.go build banck_transfer.go">
+  <component name="RunManager" selected="Go Build.go build chatRoom.go">
     <configuration name="go build 01-chatRoom.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go_oshine" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -268,39 +168,40 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build fileattr.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build demo_arry_slice.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go_oshine" />
-      <working_directory value="$PROJECT_DIR$/" />
+      <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/main/fileattr.go" />
-      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/main/demo_arry_slice.go" />
+      <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build udp-client.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build script_exporter.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go_oshine" />
-      <working_directory value="$PROJECT_DIR$/" />
+      <working_directory value="$PROJECT_DIR$/../../discovery" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/main/udp-client.go" />
-      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/../../script_exporter/cmd/script_exporter/script_exporter.go" />
+      <directory value="$PROJECT_DIR$/../../discovery" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build udp-client.go" />
-      <item itemvalue="Go Build.go build fileattr.go" />
       <item itemvalue="Go Build.go build 01-chatRoom.go" />
       <item itemvalue="Go Build.go build chatRoom.go" />
       <item itemvalue="Go Build.go build banck_transfer.go" />
+      <item itemvalue="Go Build.go build demo_arry_slice.go" />
+      <item itemvalue="Go Build.go build script_exporter.go" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build banck_transfer.go" />
         <item itemvalue="Go Build.go build chatRoom.go" />
+        <item itemvalue="Go Build.go build script_exporter.go" />
+        <item itemvalue="Go Build.go build demo_arry_slice.go" />
+        <item itemvalue="Go Build.go build banck_transfer.go" />
         <item itemvalue="Go Build.go build 01-chatRoom.go" />
-        <item itemvalue="Go Build.go build fileattr.go" />
-        <item itemvalue="Go Build.go build udp-client.go" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -335,7 +236,19 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../../github/distr/etcd/wal/wal.go">
@@ -368,49 +281,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/software/Go/src/io/io.go">
+    <entry file="file://$PROJECT_DIR$/../../../software/Go/src/io/io.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/software/Go/src/errors/errors.go">
+    <entry file="file://$PROJECT_DIR$/../../../software/Go/src/errors/errors.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/software/Go/src/time/tick.go">
+    <entry file="file://$PROJECT_DIR$/../../../software/Go/src/time/tick.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="999">
           <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/software/Go/src/builtin/builtin.go">
+    <entry file="file://$PROJECT_DIR$/../../../software/Go/src/builtin/builtin.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6102">
           <caret line="226" column="5" selection-start-line="226" selection-start-column="5" selection-end-line="226" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/software/Go/src/os/dir.go">
+    <entry file="file://$PROJECT_DIR$/../../../software/Go/src/os/dir.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
           <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/software/Go/src/os/types.go">
+    <entry file="file://$PROJECT_DIR$/../../../software/Go/src/os/types.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3024">
           <caret line="115" column="35" selection-start-line="115" selection-start-column="35" selection-end-line="115" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/software/Go/src/time/sleep.go">
+    <entry file="file://$PROJECT_DIR$/../../../software/Go/src/time/sleep.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
           <caret line="152" column="16" selection-start-line="152" selection-start-column="16" selection-end-line="152" selection-end-column="16" />
@@ -424,21 +337,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/software/Go/src/runtime/debug.go">
+    <entry file="file://$PROJECT_DIR$/../../../software/Go/src/runtime/debug.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="43" column="18" lean-forward="true" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/software/Go/src/runtime/runtime2.go">
+    <entry file="file://$PROJECT_DIR$/../../../software/Go/src/runtime/runtime2.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="501">
           <caret line="829" column="4" selection-start-line="829" selection-start-column="4" selection-end-line="829" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/software/Go/src/runtime/mstats.go">
+    <entry file="file://$PROJECT_DIR$/../../../software/Go/src/runtime/mstats.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4158">
           <caret line="158" column="5" selection-start-line="158" selection-start-column="5" selection-end-line="158" selection-end-column="5" />
@@ -466,21 +379,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/software/Go/src/runtime/panic.go">
+    <entry file="file://$PROJECT_DIR$/../../../software/Go/src/runtime/panic.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
           <caret line="678" column="2" lean-forward="true" selection-start-line="678" selection-start-column="2" selection-end-line="678" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/software/Go/src/net/net.go">
+    <entry file="file://$PROJECT_DIR$/../../../software/Go/src/net/net.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
           <caret line="131" column="21" selection-start-line="131" selection-start-column="17" selection-end-line="131" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/software/Go/src/net/dial.go">
+    <entry file="file://$PROJECT_DIR$/../../../software/Go/src/net/dial.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-548">
           <caret line="276" column="35" lean-forward="true" selection-start-line="276" selection-start-column="6" selection-end-line="276" selection-end-column="35" />
@@ -507,7 +420,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/software/Go/src/net/udpsock.go">
+    <entry file="file://$PROJECT_DIR$/../../../software/Go/src/net/udpsock.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2727">
           <caret line="104" column="18" selection-start-line="104" selection-start-column="18" selection-end-line="104" selection-end-column="18" />
@@ -544,7 +457,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/software/Go/src/os/proc.go">
+    <entry file="file://$PROJECT_DIR$/../../../software/Go/src/os/proc.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="21" column="23" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="23" />
@@ -613,14 +526,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/software/Go/src/os/stat.go">
+    <entry file="file://$PROJECT_DIR$/../../../software/Go/src/os/stat.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/software/Go/src/os/stat_windows.go">
+    <entry file="file://$PROJECT_DIR$/../../../software/Go/src/os/stat_windows.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1593">
           <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
@@ -647,7 +560,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/software/Go/src/sync/atomic/doc.go">
+    <entry file="file://$PROJECT_DIR$/../../../software/Go/src/sync/atomic/doc.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
