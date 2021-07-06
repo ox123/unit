@@ -43,18 +43,18 @@ public class SpringbootDemoApplication {
     }
 
     @GetMapping("wrong")
-    public String wrong(){
-        ConcurrentHashMap<String,Long> concurrentHashMap = getData(item_count-100);
+    public String wrong() {
+        ConcurrentHashMap<String, Long> concurrentHashMap = getData(item_count - 100);
         log.info("start");
-        concurrentHashMap.forEach((key,val)->{
+        concurrentHashMap.forEach((key, val) -> {
 
-            log.info(key,val);
+            log.info(key, val);
 
         });
         log.info("end");
-        log.info("initial size:{}",concurrentHashMap.size());
+        log.info("initial size:{}", concurrentHashMap.size());
         ForkJoinPool forkJoinPool = new ForkJoinPool(thread_count);
-        forkJoinPool.execute(()-> IntStream.rangeClosed(1,10).parallel().forEach(i->{
+        forkJoinPool.execute(() -> IntStream.rangeClosed(1, 10).parallel().forEach(i -> {
             synchronized (concurrentHashMap) {
                 int gap = item_count - concurrentHashMap.size();
                 log.info("gap size: {}", gap);

@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../../blackbox_exporter" />
     <content url="file://$MODULE_DIR$/../../discovery" />
     <content url="file://$MODULE_DIR$/../../github/distr/etcd" />
     <content url="file://$MODULE_DIR$/../../github/storage/consul" />
     <content url="file://$MODULE_DIR$/../../github/storage/prometheus" />
+    <content url="file://$MODULE_DIR$/../../memberlist" />
+    <content url="file://$MODULE_DIR$/../../prometheus" />
     <content url="file://$MODULE_DIR$/../../script_exporter" />
+    <content url="file://$MODULE_DIR$/../../serf" />
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

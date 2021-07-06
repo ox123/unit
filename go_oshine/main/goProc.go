@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
+	defer fmt.Println("defer")
 	fmt.Println(runtime.GOROOT())
 	runtime.GOMAXPROCS(4)
 	fmt.Println(runtime.NumCPU())
@@ -14,4 +15,5 @@ func main() {
 	//	go  fmt.Print(0)
 	//	fmt.Print(1)
 	//}
+	fmt.Println("ccc")
 }
