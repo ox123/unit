@@ -1,4 +1,5 @@
 object Test {
+
   trait Iterator[A] {
     def hasNext: Boolean
 

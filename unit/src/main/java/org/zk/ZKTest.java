@@ -40,7 +40,7 @@ public class ZKTest {
             }
         }
         try {
-            zk.getChildren("/",true);
+            zk.getChildren("/", true);
         } catch (KeeperException e) {
             e.printStackTrace();
         }

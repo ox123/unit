@@ -6,34 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="rocketmq-client" />
-        <module name="rocketmq-store" />
-        <module name="code" />
-        <module name="rocketmq-openmessaging" />
-        <module name="rocketmq-logging" />
-        <module name="rocketmq-acl" />
-        <module name="rocketmq-logappender" />
-        <module name="rocketmq-common" />
-        <module name="rocketmq-broker" />
-        <module name="rocketmq-test" />
-        <module name="springboot-demo" />
-        <module name="rocketmq-srvutil" />
-        <module name="dledger" />
-        <module name="rocketmq-remoting" />
-        <module name="rocketmq-filter" />
-        <module name="rocketmq-tools" />
-        <module name="rocketmq-namesrv" />
-        <module name="rocketmq-example" />
+        <module name="unit" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+<<<<<<< HEAD
       <module name="unit.unit.main~1" target="1.8" />
       <module name="unit.unit.test~1" target="1.8" />
+=======
+      <module name="unit" target="1.8" />
+>>>>>>> 61e98c9442ca377f95b7add582567e938bccb96f
     </bytecodeTargetLevel>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="springboot-demo" options="-parameters" />
-    </option>
   </component>
 </project>

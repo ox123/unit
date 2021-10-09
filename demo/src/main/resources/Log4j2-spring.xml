@@ -31,7 +31,7 @@
         <!-- filePattern 指定 warn.log 文件大于 size 大小时候文件处理规则, %d 日期;%i 编号(最大为下方设置的 max 值) -->
         <RollingFile name="RollingFileWarn" fileName="${LOG_FILE_PATH}/warn.log"
                      filePattern="${LOG_FILE_PATH}/%d{yyyy-MM-dd}/WARN_${LOG_FILE_NAME}_%i.log.gz">
-            <PatternLayout pattern="${LOG_PATTERN}" />
+            <PatternLayout pattern="${LOG_PATTERN}"/>
             <ThresholdFilter level="warn" onMatch="ACCEPT" onMismatch="DENY"/>
             <Policies>
                 <!-- interval="N" ，N小时滚动一次，默认是1 hour-->
@@ -45,7 +45,7 @@
         <!-- 输出 error 及更高优先级的 log 到 LOG_FILE_PATH 目录下的 error.log 文件  -->
         <RollingFile name="RollingFileError" fileName="${LOG_FILE_PATH}/error.log"
                      filePattern="${LOG_FILE_PATH}/%d{yyyy-MM-dd}/ERROR_${LOG_FILE_NAME}_%i.log.gz">
-            <PatternLayout pattern="${LOG_PATTERN}" />
+            <PatternLayout pattern="${LOG_PATTERN}"/>
             <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
             <Policies>
                 <TimeBasedTriggeringPolicy interval="1"/>
@@ -69,11 +69,11 @@
     <!-- 在 Loggers 引入 Appender 使其生效 -->
     <loggers>
         <!-- Logger 节点用来单独指定 package 包下的 class 的日志输出格式等信息 -->
-        <logger  name="org.springframework" level="info" additivity="false">
+        <logger name="org.springframework" level="info" additivity="false">
             <!-- 指定 org.springframework 的 level 及更高优先级的日志只在控制台输出 -->
             <!-- additivity="false" 只在自定义的Appender中进行输出 -->
             <AppenderRef ref="Console"/>
-        </logger >
+        </logger>
 
         <Root level="info">
             <!-- 用来指定项目的 Root 日志规则，如果没有单独指定Logger，那么就会默认使用 Root 日志输出 -->

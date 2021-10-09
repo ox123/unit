@@ -17,4 +17,5 @@ func main() {
 		runtime.Gosched() // 出让当前cpu时间片
 		fmt.Println("I am main")
 	}
+	fmt.Errorf("cc")
 }

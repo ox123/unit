@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My first Vue app</title>
-  <script src="https://unpkg.com/vue"></script>
+    <title>My first Vue app</title>
+    <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
-  <div id="app">
+<div id="app">
     {{ message }}
     <span v-html="link"></span>
-  </div>
+</div>
 
-  <script>
-      var my = {
-          "a":"aa"
-      }
+<script>
+    var my = {
+        "a": "aa"
+    }
     var app = new Vue({
-      el: '#app',
-      data: {
-        message: 'Hello Vue!',
-        aa: my,
-        link: "<a href='www.baidu.com'>ccc</a>"
-      },
-      created: function(){
-          console.info("created")
-      },
-      mounted: function(){
-          console.info("mounted");
-          console.info(this.el)
-      }
+        el: '#app',
+        data: {
+            message: 'Hello Vue!',
+            aa: my,
+            link: "<a href='www.baidu.com'>ccc</a>"
+        },
+        created: function () {
+            console.info("created")
+        },
+        mounted: function () {
+            console.info("mounted");
+            console.info(this.el)
+        }
     })
     console.info(app.message)
     console.info(app.aa)
-  </script>
+</script>
 </body>
 </html>

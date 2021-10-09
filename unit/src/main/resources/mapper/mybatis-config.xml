@@ -1,20 +1,20 @@
 <configuration>
 
-      <properties> <!-- 定义属性值 -->
+    <properties> <!-- 定义属性值 -->
 
         <property name="username" value="root"/>
 
         <property name="id" value="xxx"/>
 
-      </properties>
+    </properties>
 
-      <settings><!-- 全局配置信息 -->
+    <settings><!-- 全局配置信息 -->
 
         <setting name="cacheEnabled" value="true"/>
 
-      </settings>
+    </settings>
 
-      <typeAliases>
+    <typeAliases>
 
         <!-- 配置别名信息，在映射配置文件中可以直接使用Customer这个别名
 
@@ -30,37 +30,37 @@
 
         <typeAlias type="org.mybatis.shop.domain.Product" alias="Product"/>
 
-      </typeAliases>
+    </typeAliases>
 
-      <environments default="development">
+    <environments default="development">
 
         <environment id="development">
 
-          <!-- 配置事务管理器的类型 -->
+            <!-- 配置事务管理器的类型 -->
 
-          <transactionManager type="JDBC"/>
+            <transactionManager type="JDBC"/>
 
-          <!-- 配置数据源的类型，以及数据库连接的相关信息 -->
+            <!-- 配置数据源的类型，以及数据库连接的相关信息 -->
 
-          <dataSource type="POOLED">
+            <dataSource type="POOLED">
 
-            <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
 
-            <property name="url" value="jdbc:mysql://localhost:3306/test"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/test"/>
 
-            <property name="username" value="root"/>
+                <property name="username" value="root"/>
 
-            <property name="password" value="xxx"/>
+                <property name="password" value="xxx"/>
 
-          </dataSource>
+            </dataSource>
 
         </environment>
 
-      </environments>
+    </environments>
 
-      <!-- 配置映射配置文件的位置 -->
+    <!-- 配置映射配置文件的位置 -->
 
-      <mappers>
+    <mappers>
 
         <mapper resource="mapper/CustomerMapper.xml"/>
 
@@ -72,6 +72,6 @@
 
         <mapper resource="mapper/ProductMapper.xml"/>
 
-      </mappers>
+    </mappers>
 
 </configuration>

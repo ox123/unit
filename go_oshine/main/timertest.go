@@ -2,10 +2,13 @@ package main
 
 import (
 	"fmt"
+	"sync/atomic"
 	"time"
 )
 
 func main() {
+	var m atomic.Value
+	m.Load()
 	fmt.Println("now:",time.Now())
 	myTicker := time.NewTicker(time.Second *2)
 	go func() {
@@ -14,6 +17,7 @@ func main() {
 			fmt.Println("-->",nowTime)
 		}
 	}()
+	//atomic.Value{aaa}
 	for  {
 		;
 	}
