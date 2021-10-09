@@ -1,0 +1,18 @@
+<mapper namespace="org.mybatis.shop.dao.AddressMapper">
+
+    <!-- find()、findAll()方法对应的<select>标签以及<resultMap>映射比较简单，这里不再展示，感兴趣的同学可以参考代码进行学习 -->
+    <!-- 定义select语句，AddressMapper接口中的findByOrderId()方法会执行该SQL，
+  查询结果通过addressMap这个映射生成Address对象-->
+    <select id="findByOrderId" resultMap="addressMap">
+        SELECT a.* FROM t_address as a join t_order as o
+        on a.id = o.address_id
+        WHERE o.address_id = #{id}
+    </select>
+
+    <!-- 定义insert语句，AddressMapper接口中的save()方法会执行该SQL，
+  数据库生成的自增id会自动填充到传入的Address对象的id字段中-->
+    <insert id="save" keyProperty="address.id" useGeneratedKeys="true">
+        insert into t_address (street, city, country, customer_id)
+        values (#{address.street},#{address.city},#{address.country},#{customerId})
+    </insert>
+</mapper>
