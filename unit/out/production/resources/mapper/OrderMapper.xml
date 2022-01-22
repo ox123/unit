@@ -1,8 +1,8 @@
 <mapper namespace="org.mybatis.shop.dao.OrderMapper">
 
-      <!-- 定义t_order表查询记录与Order对象之间映射 -->
+    <!-- 定义t_order表查询记录与Order对象之间映射 -->
 
-      <resultMap id="orderMap" type="Order">
+    <resultMap id="orderMap" type="Order">
 
         <!-- 主键映射 -->
 
@@ -16,7 +16,7 @@
 
         <association property="customer" javaType="Customer">
 
-          <id property="id" column="customer_id"/>
+            <id property="id" column="customer_id"/>
 
         </association>
 
@@ -24,29 +24,29 @@
 
         <association property="deliveryAddress" javaType="Address">
 
-          <id property="id" column="address_id"/>
+            <id property="id" column="address_id"/>
 
         </association>
 
         <!-- 这里并没有映射orderItems集合-->
 
-      </resultMap>
+    </resultMap>
 
-      <!-- 定义select语句，OrderMapper接口中的find()方法会执行该SQL，
+    <!-- 定义select语句，OrderMapper接口中的find()方法会执行该SQL，
 
-    查询结果通过orderMap这个映射生成Order对象-->
+  查询结果通过orderMap这个映射生成Order对象-->
 
-      <select id="find" resultMap="orderMap">
+    <select id="find" resultMap="orderMap">
 
         SELECT * FROM t_order WHERE id = #{id:INTEGER}
 
-      </select>
+    </select>
 
-      <!-- 定义select语句，OrderMapper接口中的findByCustomerId()方法会执行该SQL，
+    <!-- 定义select语句，OrderMapper接口中的findByCustomerId()方法会执行该SQL，
 
-    查询结果通过orderMap这个映射生成Order对象。注意这里大于号、小于号在XML中的写法-->
+  查询结果通过orderMap这个映射生成Order对象。注意这里大于号、小于号在XML中的写法-->
 
-      <select id="findByCustomerId" resultMap="orderMap">
+    <select id="findByCustomerId" resultMap="orderMap">
 
         SELECT * FROM t_order WHERE customer_id = #{id}
 
@@ -54,18 +54,18 @@
 
         and create_date_time <![CDATA[ <= ]]> #{endTime}
 
-      </select>
+    </select>
 
-      <!-- 定义insert语句，OrderMapper接口中的save()方法会执行该SQL，
+    <!-- 定义insert语句，OrderMapper接口中的save()方法会执行该SQL，
 
-    数据库生成的自增id会自动填充到传入的Order对象的id字段中-->
+  数据库生成的自增id会自动填充到传入的Order对象的id字段中-->
 
-      <insert id="save" keyProperty="id" useGeneratedKeys="true">
+    <insert id="save" keyProperty="id" useGeneratedKeys="true">
 
-       insert into t_order (customer_id, address_id, create_time)
+        insert into t_order (customer_id, address_id, create_time)
 
-       values (#{customer.id}, #{deliveryAddress.id}, #{createTime})
+        values (#{customer.id}, #{deliveryAddress.id}, #{createTime})
 
-      </insert>
+    </insert>
 
 </mapper>
