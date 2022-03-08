@@ -27,6 +27,7 @@ object Test {
     case _ => "many"
   }
 
+
   def main(args: Array[String]) {
     println(matchTest(1))
     println(matchTest("y"))
